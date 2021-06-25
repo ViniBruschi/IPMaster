@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LoginTeste6</string>
+    <string name="ip">Endereço IP :</string>
+    <string name="masc">Máscara de rede :</string>
+    <string name="button">Calcular</string>
+    <string name="hintip">192.168.1.1</string>
+    <string name="hintmasc">/24</string>
+</resources>
