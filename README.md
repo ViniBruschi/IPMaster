@@ -5,3 +5,4 @@ App com intuito de facilitar atividades envolvendo redes como tradução de Ende
 
 Integrantes
 Vinícius Bruschi Carneiro - 2021.1906.009-3
+Gustavo da Conceição Coutinho - 2021.1902.016-0
