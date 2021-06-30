@@ -45,8 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button btncalcular;
     ListView lista;
-    EditText edt1, edt2, edtIP, edtPEndereco, edtUEndereco, edtMEndereco, edtMHost, edtEBroadCast, edtMascara,
-            edtREndereco, edtBHost, edtBitsRede;
+    EditText edt1, edt2;
     String mascara, endereco;
     String enderecoBroad, enderecoRede, ultimoendereco, primeiroendereco;
     String maxHosts, maxendereco, bitsrede, bitshosts;
@@ -186,18 +185,6 @@ public class MainActivity extends AppCompatActivity {
         edt1 = findViewById(R.id.editText1);
         edt2 = findViewById(R.id.editText2);
 
-        //edtIP = findViewById(R.id.edtIP);
-        //edtPEndereco = findViewById(R.id.edtPEndereco);
-        //edtUEndereco = findViewById(R.id.edtUEndereco);
-        //edtMEndereco = findViewById(R.id.edtMEndereco);
-        //edtMHost = findViewById(R.id.edtMHost);
-        //edtEBroadCast = findViewById(R.id.edtEBroadCast);
-        //edtMascara = findViewById(R.id.edtMascara);
-        //edtREndereco = findViewById(R.id.edtREndereco);
-        //edtBHost = findViewById(R.id.edtBHost);
-        //edtBitsRede = findViewById(R.id.edtBitsRede);
-
-
         btncalcular.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -238,17 +225,6 @@ public class MainActivity extends AppCompatActivity {
                     saidas[7] = "Máximo de Hosts: " + maxHosts;
                     saidas[8] = "Bits de Rede: " + bitsrede;
                     saidas[9] = "Bits de Host: " + bitshosts;
-
-                    /*edtIP.setText(IP);
-                    edtPEndereco.setText(primeiroendereco);
-                    edtUEndereco.setText(ultimoendereco);
-                    edtMEndereco.setText(maxendereco);
-                    edtMHost.setText(maxHosts);
-                    edtEBroadCast.setText(enderecoBroad);
-                    edtMascara.setText(mascara);
-                    edtREndereco.setText(enderecoRede);
-                    edtBHost.setText(bitshosts);
-                    edtBitsRede.setText(bitsrede);*/
 
                     List<String> Saidas = Arrays.asList(saidas);
                     ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_list_item_1, Saidas);
