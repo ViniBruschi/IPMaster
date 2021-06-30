@@ -52,7 +52,7 @@ public class Login extends AppCompatActivity {
                 String loginEmail = edt_email.getText().toString();
                 String loginSenha = edt_senha.getText().toString();
 
-                if(!TextUtils.isEmpty(loginEmail) || !TextUtils.isEmpty(loginSenha) ) {
+                if(!TextUtils.isEmpty(loginEmail) && !TextUtils.isEmpty(loginSenha) ) {
                     loginProgressBar.setVisibility(View.VISIBLE);
                     mAuth.signInWithEmailAndPassword(loginEmail, loginSenha)
                             .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -67,6 +67,8 @@ public class Login extends AppCompatActivity {
                                     }
                                 }
                             });
+                } else {
+                    Toast.makeText(Login.this, "Verifique se há campos não preenchidos", Toast.LENGTH_SHORT).show();
                 }
             }
         });

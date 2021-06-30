@@ -79,7 +79,7 @@ public class Register extends AppCompatActivity {
                 String senha = edt_senha_register.getText().toString();
                 String confirmarSenha = edt_confirmar_senha_register.getText().toString();
 
-                if(!TextUtils.isEmpty(userModel.getNome()) || !TextUtils.isEmpty(userModel.getSobrenome()) || !TextUtils.isEmpty(userModel.getEmail()) || !TextUtils.isEmpty(senha) || !TextUtils.isEmpty(confirmarSenha)){
+                if(!TextUtils.isEmpty(userModel.getNome()) && !TextUtils.isEmpty(userModel.getSobrenome()) && !TextUtils.isEmpty(userModel.getEmail()) && !TextUtils.isEmpty(senha) && !TextUtils.isEmpty(confirmarSenha)){
                     if(senha.equals(confirmarSenha)){
                         loginProgressBar_register.setVisibility(View.VISIBLE);
                         mAuth.createUserWithEmailAndPassword(userModel.getEmail(), senha).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -99,6 +99,8 @@ public class Register extends AppCompatActivity {
                     } else {
                         Toast.makeText(Register.this, "As senhas não conferem", Toast.LENGTH_SHORT).show();
                     }
+                } else {
+                    Toast.makeText(Register.this, "Verifique se há campos não preenchidos", Toast.LENGTH_SHORT).show();
                 }
             }
         });

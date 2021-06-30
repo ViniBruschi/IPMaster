@@ -22,7 +22,7 @@
 
     <EditText
         android:id="@+id/edt_nome_register"
-        android:layout_width="380dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:hint="Nome"
@@ -32,7 +32,7 @@
 
     <EditText
         android:id="@+id/edt_sobrenome_register"
-        android:layout_width="380dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:hint="Sobrenome"
@@ -42,7 +42,7 @@
 
     <EditText
         android:id="@+id/edt_email_register"
-        android:layout_width="380dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="E-mail"
         android:inputType="textEmailAddress"
@@ -51,7 +51,7 @@
 
     <EditText
         android:id="@+id/edt_senha_register"
-        android:layout_width="380dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Senha"
         android:inputType="textPassword"
@@ -60,7 +60,7 @@
 
     <EditText
         android:id="@+id/edt_confirmar_senha_register"
-        android:layout_width="380dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Confimar Senha"
         android:inputType="textPassword"
@@ -78,7 +78,7 @@
 
     <Button
         android:id="@+id/btn_registrar_register"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:text="Registrar"
@@ -87,7 +87,7 @@
 
     <Button
         android:id="@+id/btn_login_register"
-        android:layout_width="380dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Voltar"

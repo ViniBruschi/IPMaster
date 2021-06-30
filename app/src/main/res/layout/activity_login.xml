@@ -24,9 +24,10 @@
 
     <EditText
         android:id="@+id/edt_email"
-        android:layout_width="380dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="E-mail"
+        android:layout_gravity="center"
         android:inputType="textEmailAddress"
         android:shadowColor="#EFE7E7"
         android:textColor="#F3ECEC"
@@ -34,9 +35,10 @@
 
     <EditText
         android:id="@+id/edt_senha"
-        android:layout_width="380dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Senha"
+        android:layout_gravity="center"
         android:inputType="textPassword"
         android:textColor="#FFFFFF"
         android:textColorHint="#838080" />
@@ -53,7 +55,7 @@
 
     <Button
         android:id="@+id/btn_login"
-        android:layout_width="380dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Login"
@@ -62,7 +64,7 @@
 
     <Button
         android:id="@+id/btn_registrar"
-        android:layout_width="380dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Registrar"
