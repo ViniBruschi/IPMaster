@@ -6,3 +6,4 @@ App com intuito de facilitar atividades envolvendo redes como tradução de Ende
 Integrantes
 Vinícius Bruschi Carneiro - 2021.1906.009-3
 Gustavo da Conceição Coutinho - 2021.1902.016-0
+Luiz Felipe Toldo Ortega Martins - 2019.1902.013-6
